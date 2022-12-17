@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {fetchGeoLoc} from "./APIs/GeoIP";
+import {fetchGeoLoc} from "./APIs/GeoLocation";
 import Map from "./Map";
 
 
