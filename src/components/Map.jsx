@@ -1,4 +1,4 @@
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import { GoogleMap, LoadScript, InfoWindow, Marker } from "@react-google-maps/api";
 
 const containerStyle = {
   width: "100%",
@@ -9,6 +9,7 @@ const containerStyle = {
 
 function Map(props) {
   const { center } = props;
+
   return (
     <>
       <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API}>
@@ -18,6 +19,7 @@ function Map(props) {
           zoom={17}
         >
           <Marker position={center} />
+
         </GoogleMap>
       </LoadScript>
     </>
