@@ -1,6 +1,5 @@
 export async function fetchAllGeoInfo() {
-    // const response = await fetch('http://ip-api.com/json/');
-    const response = await fetch('http://ip-api.com/json/?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,offset,currency,isp,org,as,asname,reverse,mobile,proxy,hosting,query');
+    const response = await fetch('/api/geo-all');
     const data = await response.json();
 
     // console.log(data);
