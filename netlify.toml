@@ -2,7 +2,10 @@
   from = "/api/geo"
   to = "http://ip-api.com/json/"
   force = true
+  status = 200
+
 [[redirects]]
   from = "/api/geo-all"
   to = "http://ip-api.com/json/?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,offset,currency,isp,org,as,asname,reverse,mobile,proxy,hosting,query"
   force = true
+  status = 200
